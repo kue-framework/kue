@@ -7,8 +7,6 @@ import spark.Route
  * @author Michael Vaughan
  */
 
-
-
 fun securedPolitely(next: Route) = Route() { req, res ->
     if ("please".equals(req?.headers("Authorization") ?: "")) {
         next.handle(req, res)
@@ -21,6 +19,10 @@ fun securedPolitely(next: Route) = Route() { req, res ->
 
 fun json(next: Route) = Route() { req, res ->
     res.type("application/json")
-    JSON.writeValueAsString(next.handle(req, res))
+    try {
+        JSON.writeValueAsString(next.handle(req, res))
+    } catch (e: Exception) {
+        e.printStackTrace()
+    }
 }
 
