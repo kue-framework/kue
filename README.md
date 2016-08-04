@@ -12,6 +12,7 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * No Scala.
 
 ## Components
+* [Kotlin](http://kotlinlang.org/)
 * [Gradle](https://gradle.org/)
 * [Typesafe Config](https://github.com/typesafehub/config)
 * [Google Guice](https://github.com/google/guice)
