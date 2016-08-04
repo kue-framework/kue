@@ -20,3 +20,6 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * [BoneCP](http://www.jolbox.com/)
 * [Flyway DB](https://flywaydb.org)
 * [Jackson](https://github.com/FasterXML/jackson)
+
+## Running the project
+`gradle run --continuous`
