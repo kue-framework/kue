@@ -20,6 +20,7 @@ fun securedPolitely(next: Route) = Route() { req, res ->
 
 
 fun json(next: Route) = Route() { req, res ->
+    res.type("application/json")
     JSON.writeValueAsString(next.handle(req, res))
 }
 
