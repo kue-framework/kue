@@ -1,7 +1,7 @@
-package com.ascotrobot.kue.services
+package com.widgets.services
 
-import com.ascotrobot.kue.models.db.Widget
-import com.ascotrobot.kue.models.dto.CreateWidgetRequest
+import com.widgets.models.db.Widget
+import com.widgets.models.dto.CreateWidgetRequest
 
 /**
  * @author Michael Vaughan

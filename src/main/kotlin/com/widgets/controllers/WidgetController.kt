@@ -1,9 +1,10 @@
-package com.ascotrobot.kue.controllers
+package com.widgets.controllers
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.ascotrobot.kue.models.dto.CreateWidgetRequest
-import com.ascotrobot.kue.models.dto.widgetResponse
-import com.ascotrobot.kue.services.WidgetService
+import com.widgets.models.dto.CreateWidgetRequest
+import com.widgets.models.dto.widgetResponse
+import com.widgets.services.WidgetService
+import com.kue.route.json
 import spark.Route
 import javax.inject.Inject
 
@@ -18,7 +19,7 @@ class WidgetController @Inject constructor (val objectMapper: ObjectMapper, val 
         widgetResponse(widget)
     })
 
-    val list = json(Route() {req, res ->
+    val list = json(Route() { req, res ->
         widgetService.list().map { widgetResponse(it) }
     })
 

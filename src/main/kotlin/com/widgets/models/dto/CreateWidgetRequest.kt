@@ -1,4 +1,4 @@
-package com.ascotrobot.kue.models.dto
+package com.widgets.models.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

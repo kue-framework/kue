@@ -1,8 +1,8 @@
-package com.ascotrobot.kue.services.impl
+package com.widgets.services.impl
 
-import com.ascotrobot.kue.models.db.Widget
-import com.ascotrobot.kue.models.dto.CreateWidgetRequest
-import com.ascotrobot.kue.services.WidgetService
+import com.widgets.models.db.Widget
+import com.widgets.models.dto.CreateWidgetRequest
+import com.widgets.services.WidgetService
 import com.avaje.ebean.Ebean
 
 /**

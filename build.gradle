@@ -3,89 +3,52 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+        mavenLocal()
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3"
         classpath "gradle.plugin.org.kt3k:ebean-enhance-plugin:2.0.5"
         classpath "com.h2database:h2:1.4.191"
+        classpath "gradle.plugin.com.kue:kue-gradle-plugin:1.0.1"
+        classpath "gradle.plugin.com.boxfuse.client:flyway-release:4.0.3"
     }
 }
 
-plugins {
-    id "org.flywaydb.flyway" version "4.0.3"
-}
 
 group 'com.ascotrobot'
-version '0.1-SNAPSHOT'
+version '1.0-SNAPSHOT'
 
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
 apply plugin: 'com.github.kt3k.ebean.enhance'
-
-def mainClass = "com.ascotrobot.kue.internal.Main"
+apply plugin: 'org.flywaydb.flyway'
+apply plugin: 'com.kue'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.1"
-    compile "com.sparkjava:spark-core:2.5"
-    compile "org.avaje.ebeanorm:avaje-ebeanorm:7.13.1"
-    compile "com.jolbox:bonecp:0.8.0.RELEASE"
-    compile "com.typesafe:config:1.3.0"
-    compile "com.google.inject:guice:4.0"
-    compile "com.fasterxml.jackson.core:jackson-databind:2.8.0"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.3"
+    compile "com.kue:kue-jackson:1.0-SNAPSHOT"
+    compile "com.kue:kue-ebean:1.0-SNAPSHOT"
+    compile "com.kue:kue-core:1.0-SNAPSHOT"
+    compile "com.kue:kue-bonecp:1.0-SNAPSHOT"
     compile "com.h2database:h2:1.4.191"
     testCompile "junit:junit:4.11"
 }
 
 ebeanEnhance {
-    packages = 'com.ascotrobot.kue.models.db.**'
+    packages = 'com.widgets.models.db.**'
 }
 
 flyway {
     url = "$System.env.WIDGET_DB_URL"
     user = "$System.env.WIDGET_DB_USERNAME"
     password = "$System.env.WIDGET_DB_PASSWORD"
-}
-
-task kill() {
-    def runningPidFile = new File("./RUNNING_PID")
-    if (runningPidFile.exists()) {
-        def pid = runningPidFile.readLines()[0]
-        "kill $pid".execute()
-    }
-}
-
-task run(dependsOn: [':build', ':kill', ':flywayMigrate']) {
-    flywayMigrate.mustRunAfter kill
-    def classpath = sourceSets.main.runtimeClasspath.getFiles().collect {it.getAbsolutePath()}.join(':')
-    doLast {
-        Thread.start {
-            def proc = "java -cp $classpath $mainClass".execute()
-            Gradle.addShutdownHook {
-                proc.destroy()
-            }
-            if (proc in UNIXProcess) {
-                def runningPidFile = new File("./RUNNING_PID")
-                runningPidFile.write(proc.pid.toString())
-            }
-            Thread.start { printStream(proc.inputStream) }
-            Thread.start { printStream(proc.errorStream) }
-        }
-    }
-}
-
-
-def printStream(InputStream is) {
-    def bytes = new byte[32]
-    def read = 0
-    while((read = is.read(bytes)) != -1) {
-        print (new String(bytes, 0, read, "UTF-8"))
-    }
 }
 
 

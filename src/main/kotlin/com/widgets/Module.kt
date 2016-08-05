@@ -1,9 +1,9 @@
-package com.ascotrobot.kue
+package com.widgets
 
 import com.google.inject.AbstractModule
-import com.ascotrobot.kue.controllers.WidgetController
-import com.ascotrobot.kue.services.WidgetService
-import com.ascotrobot.kue.services.impl.DefaultWidgetService
+import com.widgets.controllers.WidgetController
+import com.widgets.services.WidgetService
+import com.widgets.services.impl.DefaultWidgetService
 
 
 /**

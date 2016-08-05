@@ -1,7 +1,7 @@
-package com.ascotrobot.kue.models.db
+package com.widgets.models.db
 
 import com.avaje.ebean.Model
-import com.ascotrobot.kue.models.dto.CreateWidgetRequest
+import com.widgets.models.dto.CreateWidgetRequest
 import java.util.*
 import javax.persistence.Entity
 import javax.persistence.Id

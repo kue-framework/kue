@@ -1,6 +1,6 @@
-package com.ascotrobot.kue.models.dto
+package com.widgets.models.dto
 
-import com.ascotrobot.kue.models.db.Widget
+import com.widgets.models.db.Widget
 import java.util.*
 
 /**

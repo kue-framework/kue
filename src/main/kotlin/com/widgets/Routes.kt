@@ -1,6 +1,6 @@
-package com.ascotrobot.kue
+package com.widgets
 
-import com.ascotrobot.kue.controllers.WidgetController
+import com.widgets.controllers.WidgetController
 import spark.Spark.*
 import javax.inject.Inject
 
