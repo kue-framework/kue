@@ -1,6 +1,8 @@
 # Kue
 An opinionated, Kotlin friendly web framework, that brings over some of my favorite things from [Play Framework](https://www.playframework.com/) without a dependency on Scala. It is currently just a seed project, however the ultimate goal is to turn these features into a distributable package for generating your own projects using my favorite recipe.
 
+#### [Getting Started](docs/getting-started.md)
+
 ## Goals (Mostly inspired by Play Framework)
 * Project should auto reload or hotswap when source files change.
 * Ability to easily compose HTTP actions.
@@ -24,7 +26,7 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * [Flyway DB](https://flywaydb.org)
 * [Jackson](https://github.com/FasterXML/jackson)
 
-### [Getting Started](docs/getting-started.md)
+
 
 
 ## Running the project
