@@ -1,4 +1,4 @@
-# kue
+# Kue
 An opinionated, Kotlin friendly web framework, that brings over some of my favorite things from [Play Framework](https://www.playframework.com/) without a dependency on Scala. It is currently just a seed project, however the ultimate goal is to turn these features into a distributable package for generating your own projects using my favorite recipe.
 
 ## Goals (Mostly inspired by Play Framework)
