@@ -11,6 +11,7 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * Opinionated out of the box, but allows you to easily swap out the parts if desired.
 * No SBT.
 * No Scala.
+* Favor Guice over Spring.
 
 ## Components
 * [Kotlin](http://kotlinlang.org/)
@@ -22,6 +23,9 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * [BoneCP](http://www.jolbox.com/)
 * [Flyway DB](https://flywaydb.org)
 * [Jackson](https://github.com/FasterXML/jackson)
+
+## Getting Started
+
 
 ## Running the project
 `gradle run --continuous`
