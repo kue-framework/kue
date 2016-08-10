@@ -24,7 +24,7 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 * [Flyway DB](https://flywaydb.org)
 * [Jackson](https://github.com/FasterXML/jackson)
 
-## Getting Started
+### [Getting Started](docs/getting-started.md)
 
 
 ## Running the project
