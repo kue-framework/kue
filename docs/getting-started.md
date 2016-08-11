@@ -2,7 +2,7 @@
 
 1. You can generate a new project using [Yeoman](http://yeoman.io/). Install the kue generator with 
     
-    `npm generator-kue`.
+    `npm install generator-kue`.
     
 2. Create a new directory and change into that directory with 
     
