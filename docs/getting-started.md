@@ -6,9 +6,11 @@
 4. Answer the prompts or leave the defaults.
 5. Start the app with `gradle run --continuous`
 6. You can create a new Widget with:
+    
     ```
     curl -X POST -H "Content-Type: application/json" -d '{"name": "Foo", "color": "orange"}' "http://localhost:4567/widgets"
     ```
+    
 7. You can then view a list of existing Widgets with:
     ```
     curl -X GET "http://localhost:4567/widgets"
