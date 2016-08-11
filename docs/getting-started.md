@@ -13,6 +13,7 @@
     `yo kue`
     
 4. Answer the prompts or leave the defaults.
+
 5. Start the app with 
     
     `gradle run --continuous`
@@ -30,8 +31,11 @@
     ```
     
 8. Start by looking at `com.widgets.Routes.kt`. This is where all of the Spark routes are mapped. Learn more about [Spark routes](http://sparkjava.com/documentation.html#routes).
+
 9. These routes are loaded by a Guice module defined at `com.widgets.Module`. This is also where the `WidgetController` and the `WidgetService` is bound as well. Learn more about [Guice](https://github.com/google/guice/wiki/Motivation).
+
 10. The application knows about the Guice module because the main class located inside of kue-core loads any modules defined in a config file for property `guice.modules`. Look inside of `src/main/resources/application.conf` for this application's config file. Learn more about [Typesafe Config](https://github.com/typesafehub/config).
+
 11. Now let's add a route to GET a specific widget by ID. Start by adding the following function to `com.widgets.services.WidgetService`
     
     ```
@@ -39,6 +43,7 @@
     ```
     
 12. After saving, you'll notice in the console where you started the app with `gradle run --continuous` it reloaded after detecting the change.
+
 13. Add the implementation to `com.widgets.services.impl.DefaultWidgetService`
     
     ```
