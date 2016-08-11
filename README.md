@@ -26,7 +26,3 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 
 ## Documentation
 1. [Getting Started](docs/getting-started.md)
-
-
-## Running the project
-`gradle run --continuous`
