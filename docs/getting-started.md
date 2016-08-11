@@ -1,24 +1,32 @@
 # Getting Started
 
-1. You can generate a new project using [Yeoman](http://yeoman.io/). Install the kue generator with 
+1. You can generate a new project using [Yeoman](http://yeoman.io/). Install the kue generator.
     
-    `npm install -g generator-kue`.
+    ```
+    npm install -g generator-kue
+    ```
     
-2. Create a new directory and change into that directory with 
+2. Create a new directory and change into that directory.
     
-    `mkdir widgets-api && cd widgets-api`.
+    ```
+    mkdir widgets-api && cd widgets-api
+    ```
     
 3. Use Yeoman to generate the project 
     
-    `yo kue`
+    ```
+    yo kue
+    ```
     
 4. Answer the prompts or leave the defaults. The rest of this guide assumes the defaults were used.
 
-5. Start the app with 
+5. Start the app.
     
-    `gradle run --continuous`
+    ```
+    gradle run --continuous
+    ```
     
-6. You can create a new Widget with:
+6. Create a Widget.
     
     ```
     curl -X POST -H "Content-Type: application/json" -d '{"name": "Foo", "color": "orange"}' "http://localhost:4567/widgets"
