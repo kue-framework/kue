@@ -12,7 +12,7 @@
     
     `yo kue`
     
-4. Answer the prompts or leave the defaults. The rest of this guide assumes you used the defaults.
+4. Answer the prompts or leave the defaults. The rest of this guide assumes the defaults were used.
 
 5. Start the app with 
     
