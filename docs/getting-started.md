@@ -58,7 +58,7 @@
     override fun get(id: UUID): Widget? = Ebean.find(Widget::class.java).where().idEq(id).findUnique()
     ```
     
-14. Add the controller action:
+14. Add the controller action to `com.widgets.controllers.WidgetController`:
     
     ```
     val get = json(Route() { req, res ->
