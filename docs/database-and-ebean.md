@@ -30,7 +30,7 @@ flyway {
 ```
 
 ## Ebean Enhancement
-Ebean enhances the model classes at compile time in order to add it's functionality. This is done via an Ebean Gradle plugin, and the package is configured in `build.gradle` via the `ebeanEnhance.package` value. If you want to use a different package for your Ebean model classes, you'll need to update this value inside of `build.gradle`. If you don't update this value to your new package location, you'll get an error message similar to `Bean class com.widgets.models.db.Widget is not enhanced?` in your console/logs.
+Ebean enhances the model classes at compile time in order to add it's functionality. This is done via an Ebean Gradle plugin, and the package is configured in `build.gradle` via the `ebeanEnhance.packages` value. If you want to use a different package for your Ebean model classes, you'll need to update this value inside of `build.gradle`. If you don't update this value to your new package location, you'll get an error message similar to `Bean class com.widgets.models.db.Widget is not enhanced?` in your console/logs.
 
 ```
 ebeanEnhance {
