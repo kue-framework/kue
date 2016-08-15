@@ -18,8 +18,14 @@ class MyClass {
 
   fun doSomething() {
     Log.info("Doing something!")
+    val date = try {
+      LocalDate.parse("notadate")
+    } catch (e: DateTimeParseException) {
+      Log.error("Error occcurred while parsing date, using now().", e)
+      LocalDate.now()
+    }
   }
-
+  
 }
 ```
 
