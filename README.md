@@ -1,7 +1,7 @@
 # Kue
 An opinionated, Kotlin friendly web framework, that brings over some of my favorite things from [Play Framework](https://www.playframework.com/) without a dependency on Scala.
 
-## Goals (Mostly inspired by Play Framework)
+## Goals
 * Project should auto reload or hotswap when source files change.
 * Ability to easily compose HTTP actions.
 * Easy to use, yet robust configuration mechanism.
