@@ -1,5 +1,5 @@
 # Database and Ebean
-The configuration for your database is currently (and unfortunately) stored in two places. This is because Flyway needs to know about your database connection as well and the Flyway Gradle plugin is configured through the build.gradle file.
+The configuration for your database is currently (and unfortunately) stored in two places. This is because Flyway needs to know about your database connection as well and the Flyway Gradle plugin is configured through the `build.gradle` file.
 
 With that in mind, it is highly recommended to use environment variables to configure the database credentials. There are actually two big benefits to this approach.
 
