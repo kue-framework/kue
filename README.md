@@ -26,4 +26,5 @@ An opinionated, Kotlin friendly web framework, that brings over some of my favor
 
 ## Documentation
 1. [Getting Started](docs/getting-started.md)
-2. [Logging](docs/logging.md)
+2. [Database and Ebean](docs/database-and-ebean.md)
+3. [Logging](docs/logging.md)
