@@ -3,6 +3,7 @@
 Below are the details for running and debugging a Kue application.
 
 ## Running an Application
+By default the application starts on port 4567.
 ```
 gradle run --continuous
 ```

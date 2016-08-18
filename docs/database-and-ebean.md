@@ -39,6 +39,6 @@ ebeanEnhance {
 ```
 
 ## Configuring Ebean via ServerConfigStartup
-
+TODO
 
 [Running and Debugging << Previous](running-and-debugging.md) | [Next >> Logging](logging.md)
