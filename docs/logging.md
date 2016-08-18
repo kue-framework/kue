@@ -3,7 +3,7 @@
 Logging is a powerful tool for monitoring, debugging, and error tracking in your application. Kue provides an API for logging which at the core is based on [SLF4J](http://www.slf4j.org/) with [Logback](http://logback.qos.ch/) as the default logging engine.
 
 ## Using the Log
-Kue provides the `com.kue.core.Log` object which can be used to log at the following levels: 
+Kue provides the `com.kue.core.Log` object which can be used to log at the following levels:
 
 * ERROR
 * WARN
@@ -25,7 +25,7 @@ class MyClass {
       LocalDate.now()
     }
   }
-  
+
 }
 ```
 
@@ -55,3 +55,5 @@ You can configure specific logger levels or just match the start of there names 
 
 For more information about configuring Logback, please refer to their [extensive documentation](http://logback.qos.ch/manual/index.html).
 
+
+[Database and Ebean << Previous](docs/database-and-ebean.md)

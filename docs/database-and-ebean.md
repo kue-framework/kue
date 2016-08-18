@@ -11,12 +11,12 @@ By default, `generator-kue` does not use environment variables for the H2 connec
 **src/main/resources/application.conf**
 ```
 db.default {
-  
+
   driver = "org.h2.Driver"
   url = ${DB_URL}
   username = ${DB_USERNAME}
   password = ${DB_PASSWORD}
-  
+
 }
 ```
 
@@ -40,3 +40,5 @@ ebeanEnhance {
 
 ## Configuring Ebean via ServerConfigStartup
 
+
+[Running and Debugging << Previous](docs/running-and-debugging.md) | [Next >> Logging](docs/logging.md)
