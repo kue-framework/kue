@@ -7,6 +7,10 @@ By default the application starts on port 4567.
 ```
 gradle run --continuous
 ```
+Use -Pport=<port> to change the port the application runs on.
+```
+gradle run -Pport=9000
+```
 
 ## Debugging an Application
 To debug a Kue application, use a remote debugger. This is usually fairly easy
