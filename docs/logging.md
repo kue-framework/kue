@@ -56,4 +56,4 @@ You can configure specific logger levels or just match the start of there names 
 For more information about configuring Logback, please refer to their [extensive documentation](http://logback.qos.ch/manual/index.html).
 
 
-[Database and Ebean << Previous](docs/database-and-ebean.md)
+[Database and Ebean << Previous](database-and-ebean.md)

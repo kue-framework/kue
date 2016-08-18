@@ -15,4 +15,4 @@ remote debugger for the Kue application on port 9999.
 gradle run -Pdebug=9999 --continuous
 ```
 
-[Getting Started << Previous](docs/getting-started.md) | [Next >> Database and Ebean](docs/database-and-ebean.md)
+[Getting Started << Previous](getting-started.md) | [Next >> Database and Ebean](database-and-ebean.md)

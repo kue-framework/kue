@@ -80,4 +80,4 @@
 
 16. You can now view a single Widget instance at `GET localhost:4567/widgets/<uuid-of-widget>`
 
-[Next >> Running and Debugging](docs/running-and-debugging.md)
+[Next >> Running and Debugging](running-and-debugging.md)

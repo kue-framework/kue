@@ -41,4 +41,4 @@ ebeanEnhance {
 ## Configuring Ebean via ServerConfigStartup
 
 
-[Running and Debugging << Previous](docs/running-and-debugging.md) | [Next >> Logging](docs/logging.md)
+[Running and Debugging << Previous](running-and-debugging.md) | [Next >> Logging](logging.md)
