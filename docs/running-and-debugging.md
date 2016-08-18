@@ -9,7 +9,7 @@ gradle run --continuous
 ```
 Use -Pport=<port> to change the port the application runs on.
 ```
-gradle run -Pport=9000
+gradle run -Pport=9000 --continuous
 ```
 
 ## Debugging an Application
