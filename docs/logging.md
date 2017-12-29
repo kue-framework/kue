@@ -1,4 +1,4 @@
-#Logging
+# Logging
 
 Logging is a powerful tool for monitoring, debugging, and error tracking in your application. Kue provides an API for logging which at the core is based on [SLF4J](http://www.slf4j.org/) with [Logback](http://logback.qos.ch/) as the default logging engine.
 
